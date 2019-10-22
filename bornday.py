@@ -1,10 +1,18 @@
-answer = input('Год рождения А.С.Пушкина')
-if answer == ('1799'):
-    print('Верно')
-
-answer = input('День рождения А.С.Пушкина')
-if answer == ('6 июня'):
-    print('Верно')
+right_year = 1799
+right_day = "06.06"
+year = ""
+while not year.isdigit():
+    year = input("Введите год рождения А.С.Пушкина:")
+year = int(year)
+if year == right_year:
+    day = input("Введите день рождения А.С.Пушкина):")
+if day == right_day:
+    print("Верно!")
 else:
-    print('Не верно')
+    print("Неверный день рождения!")
+
+    print("Неверный год рождения!")
+
+
+
 
